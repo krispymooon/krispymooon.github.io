@@ -54,7 +54,7 @@ html, body {
 
 .settings-block button {
   font-size: x-large;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 10px 30px;
 }
 
@@ -77,11 +77,11 @@ html, body {
   width: 100%;
   border-style: solid;
   border-width: thin;
-  background-color: rgb(43 42 42);
+  background-color: rgb(102 79 138);
 } 
 
 .sidepanel {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #f1f1f1;
   height: 100vh;
   width: 0;
@@ -89,8 +89,8 @@ html, body {
   z-index: 2;
   top: 0;
   right: 0;
-  background: rgb(19,19,19);
-  background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.6558998599439776) 100%);
+  background: rgb(72,49,108);
+  background: linear-gradient(180deg, rgba(72,49,108,1) 0%, rgba(72,49,108,0.6558998599439776) 100%);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -101,7 +101,7 @@ html, body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #B69FDA;
   display: block;
   transition: 0.3s;
 }
@@ -125,12 +125,12 @@ html, body {
   right: 0;
   font-size: 20px;
   cursor: pointer;
-  background-color: rgba(19,19,19,0.6);
+  background-color: rgba(72,49,108,0.6);
   color: white;
   padding: 10px 15px;
   border: none;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #8463A8;
 }
