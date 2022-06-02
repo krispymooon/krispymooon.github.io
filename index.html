@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
+        <script src="./function.js"></script>
+        <title>Визуализация алгоритмов сортировки</title>
+    </head>
+
+    <body onload="load()">
+        <div class="Container">
+            <div id="sidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <div class="settings">
+                    <div id="array-setting" class="array-settings settings-block">
+                        <label for="array-setting">МАССИВ</label>
+                        <p class="title">ЭЛЕМЕНТЫ МАССИВА ЧЕРЕЗ ПРОБЕЛ</p>
+                        <textarea name="Area" class="TextArea" id="text" cols="15" rows="1"></textarea>
+                        <p class="title">КОЛИЧЕСТВО ГЕНЕРИРУЕМЫХ ЭЛЕМЕНТОВ</p>
+                        <input type="number" name="SizeSpin" id="sizespin" min="2" value="100" required>
+                        <p class="title">СКОРОСТЬ ОТРИСОВКИ</p>
+                        <input type="number" name="SpeedSpin" value="0.01" step='0.1' id="speedspin" min="0.01" required>
+                        <p class="title"><input type="checkbox" onclick="CheckChanged()" name="check" id="check" class="check">АВТОМАТИЧЕСКОЕ ЗАПОЛНЕНИЕ</p>
+                        <button onclick="CreateArray()" class="ShowButton">ОТОБРАЗИТЬ</button>
+                    </div>
+                    <div id="sort-settings" class="sort-settings settings-block">
+                        <label for="">СОРТИРОВКА</label>
+                        <p class="title">АЛГОРИТМ СОРТИРОВКИ</p>
+                        <select name="SortingAlg" class="SortCombo" id="sortcombo">
+                            <option value="Heap">Пирамидальная</option>
+                            <option value="Bubble">Пузырек</option>
+                            <option value="Insert">Вставками</option>
+                            <option value="Shell">Шелла</option>
+                            <option value="Gnome">Гномья</option>
+                            <option value="Cocktail">Перемешивание</option>
+                            <option value="Choose">Выбором</option>
+                        </select>
+                        <button onclick="Sort()" class='Button'>СОРТИРОВАТЬ</button>
+                    </div>
+                    <div id="search-settings" class="search-settings settings-block">
+                        <label for="search-settings">ПОИСК</label>
+                        <p class="title">АЛГОРИТМ ПОИСКА</p>
+                        <select name="SearchingAlg" class="SearchCombo" id="searchcombo">
+                            <option value="Line">Линейный</option>
+                            <option value="Bin">Бинарный</option>
+                        </select>
+                        <p class="title">ЧИСЛО ДЛЯ ПОИСКА</p>
+                        <textarea name="Area2" class="TextArea2" id="value" cols="10" rows="1"></textarea>
+                        <br><button onclick="Search()" class="SearchButton">НАЙТИ</button>
+                        <br><output id="Out" class="title"></output>
+                    </div>
+                </div>
+            </div>
+            <button class="openbtn">&#9776; Настройки</button>
+            <canvas id = 'Visualization' class='Visualization'></canvas>
+        </div>
+        <script src="./sidepanel.js"></script>
+    </body>
+</html>
